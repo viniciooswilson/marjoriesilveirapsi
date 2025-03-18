@@ -7,16 +7,16 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
         body { background: #f5f5f5; color: #333; display: flex; }
-        .sidebar { width: 250px; background: #0077b6; color: white; padding: 20px; height: 100vh; position: fixed; left: 0; top: 0; display: flex; flex-direction: column; transition: transform 0.3s ease; }
+        .sidebar { width: 250px; background: #0f4b03b9; color: white; padding: 20px; height: 100vh; position: fixed; left: 0; top: 0; display: flex; flex-direction: column; transition: transform 0.3s ease; }
         .sidebar h2 { margin-bottom: 20px; font-size: 1.5em; }
         .sidebar a { color: white; text-decoration: none; padding: 10px 0; display: block; font-size: 1.1em; }
-        .sidebar a:hover { background: #005f8b; padding-left: 5px; }
+        .sidebar a:hover { background: #1f5a13; padding-left: 5px; }
         .menu-toggle { 
             display: block; 
             position: fixed; 
             top: 15px; 
             left: 15px; 
-            background: rgba(0, 119, 182, 0.8); 
+            background: rgba(15, 75, 3, 0.73); 
             color: white; 
             border: none; 
             padding: 10px; 
@@ -28,15 +28,15 @@
             transition: background 0.3s ease;
         }
         .menu-toggle:hover {
-            background: rgba(0, 119, 182, 1);
+            background: rgba(44, 95, 33, 0.73);
         }
         .container { max-width: 1000px; margin: 20px auto 20px 280px; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); transition: margin-left 0.3s ease; }
         .header { text-align: center; padding: 20px 0; }
-        .header h1 { font-size: 2.5em; color: #0077b6; }
+        .header h1 { font-size: 2.5em; color: #1f5a13; }
         .content { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
         .content img { width: 100%; max-width: 450px; border-radius: 10px; }
         .text { flex: 1; }
-        .text h2 { color: #0077b6; margin-bottom: 10px; }
+        .text h2 { color: #1f5a13; margin-bottom: 10px; }
         .text p { line-height: 1.6; }
         .cta { text-align: center; margin-top: 20px; }
         .cta a { background: #25d366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 1.2em; }
@@ -49,6 +49,29 @@
             .container { margin-left: 0; }
         }
         .sidebar.open { transform: translateX(0); }
+        .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1da851;
+}
+
+    
     </style>
 </head>
 <body>
@@ -98,4 +121,7 @@
         }
     </script>
 </body>
+<a href="https://wa.me/5511962665355" class="whatsapp-button" target="_blank">
+    <img src="imagens/icons/WhatsApp.svg" alt="WhatsApp" width="40">
+</a>
 </html>
