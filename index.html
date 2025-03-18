@@ -33,6 +33,7 @@
         .container { max-width: 1000px; margin: 20px auto 20px 280px; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); transition: margin-left 0.3s ease; }
         .header { text-align: center; padding: 20px 0; }
         .header h1 { font-size: 2.5em; color: #1f5a13; }
+        .content_cabecalho { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
         .content { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
         .content img { width: 100%; max-width: 450px; border-radius: 10px; }
         .text { flex: 1; }
@@ -70,6 +71,20 @@
 .whatsapp-button:hover {
     background-color: #1da851;
 }
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Espaço entre o logo e o texto */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 80px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border-radius: 50%; /* Deixa o logo circular (remova se não quiser) */
+}
 
     
     </style>
@@ -85,9 +100,12 @@
         <a href="#">Opções de Agendamento</a>
         <a href="#">Serviços</a>
         <a href="#">Contato</a>
+        <br><br>
+        <img src="imagens/logos/Group-2.png" alt="Logo Marjorie Silveira" class="logo">
     </div>
     <div class="container">
         <div class="header">
+            <img src="imagens/logos/Group-2.png" alt="Logo Marjorie Silveira" class="logo">
             <h1>Marjorie Silveira <br> Psicoterapia</h1>
         </div>
         <div class="content">
