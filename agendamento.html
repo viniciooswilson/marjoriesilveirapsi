@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página | Marjorie Silveira Psicóloga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+    <div class="sidebar" id="sidebar">
+        <br><br><br>
+        <img src="imagens/logos/Group-2.png" alt="Logo Marjorie Silveira" class="logo">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre Marjorie</a>
+        <a href="agendamento.html">Opções de Agendamento</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+        <br><br>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <img src="imagens/logos/Group-2.png" alt="Logo Marjorie Silveira" class="logo">
+            <h1>Marjorie Silveira<br>Psicoterapia</h1>
+        </div>
+
+        <!-- 🔽 Aqui muda o conteúdo conforme a página -->
+<div class="content">
+    <div class="text">
+        <h2>Agende Sua Sessão</h2>
+        <p>Você pode escolher entre atendimento presencial ou online. O primeiro passo é agendar um horário para nossa conversa inicial.</p>
+        <div class="cta">
+            <a href="https://wa.me/5511962665355" target="_blank">Agendar pelo WhatsApp</a>
+        </div>
+    </div>
+    <img src="imagens/imgpsicologamarjorie/psi2.jpg" alt="Agendamento de sessão">
+</div>
+
+    </div>
+
+    <a href="https://wa.me/5511962665355" class="whatsapp-button" target="_blank">
+        <img src="imagens/icons/WhatsApp.svg" alt="WhatsApp" width="40">
+    </a>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("open");
+        }
+    </script>
+</body>
+</html>

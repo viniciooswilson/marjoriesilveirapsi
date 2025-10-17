@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página | Marjorie Silveira Psicóloga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+    <div class="sidebar" id="sidebar">
+        <br><br><br>
+        <img src="imagens/logos/Group-2.png" alt="Logo Marjorie Silveira" class="logo">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre Marjorie</a>
+        <a href="agendamento.html">Opções de Agendamento</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+        <br><br>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <img src="imagens/logos/Group-2.png" alt="Logo Marjorie Silveira" class="logo">
+            <h1>Marjorie Silveira<br>Psicoterapia</h1>
+        </div>
+
+        <!-- 🔽 Aqui muda o conteúdo conforme a página -->
+        <div class="content">
+    <img src="imagens/imgpsicologamarjorie/psi1.jpg" alt="Psicóloga Marjorie Silveira">
+    <div class="text">
+        <h2>Sobre Marjorie</h2>
+        <p>Sou psicóloga formada pela [nome da instituição], com experiência em atendimento clínico individual, de casais e grupos. Minha abordagem prioriza o acolhimento, a escuta empática e o respeito à singularidade de cada pessoa.</p>
+        <p>Atendo adultos e adolescentes em busca de autoconhecimento, equilíbrio emocional e qualidade de vida.</p>
+    </div>
+</div>
+    </div>
+
+    <a href="https://wa.me/5511962665355" class="whatsapp-button" target="_blank">
+        <img src="imagens/icons/WhatsApp.svg" alt="WhatsApp" width="40">
+    </a>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("open");
+        }
+    </script>
+</body>
+</html>

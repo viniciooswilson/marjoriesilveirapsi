@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página | Marjorie Silveira Psicóloga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+    <div class="sidebar" id="sidebar">
+        <br><br><br>
+        <img src="imagens/logos/Group-2.png" alt="Logo Marjorie Silveira" class="logo">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre Marjorie</a>
+        <a href="agendamento.html">Opções de Agendamento</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+        <br><br>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <img src="imagens/logos/Group-2.png" alt="Logo Marjorie Silveira" class="logo">
+            <h1>Marjorie Silveira<br>Psicoterapia</h1>
+        </div>
+
+        <!-- 🔽 Aqui muda o conteúdo conforme a página -->
+<div class="content">
+    <div class="text">
+        <h2>Entre em Contato</h2>
+        <p>Quer saber mais sobre os atendimentos ou tirar dúvidas? Fale comigo:</p>
+        <ul>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/5511962665355" target="_blank">+55 (11) 96266-5355</a></li>
+            <li><strong>Email:</strong> marjorie@exemplo.com</li>
+            <li><strong>Instagram:</strong> <a href="#" target="_blank">@psic.marjoriesilveira</a></li>
+        </ul>
+    </div>
+    <img src="imagens/imgpsicologamarjorie/psi3.jpg" alt="Contato com psicóloga">
+</div>
+
+    </div>
+
+    <a href="https://wa.me/5511962665355" class="whatsapp-button" target="_blank">
+        <img src="imagens/icons/WhatsApp.svg" alt="WhatsApp" width="40">
+    </a>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("open");
+        }
+    </script>
+</body>
+</html>
