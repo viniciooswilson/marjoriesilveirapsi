@@ -7,7 +7,7 @@
 
     /* Cores da identidade visual */
     --cor-verde-principal: #3b4e3b;           /* Sidebar, rodapé */
-    --cor-verde-principal-transparente: #3b4e3bf1;
+    --cor-verde-principal-transparente: #3b4e3bf1; /* Menu lateral*/
     --cor-verde-escura: #1f5a13;              /* Hovers e destaques */
     --cor-verde-clara: #25d366;               /* Botões de ação (WhatsApp, CTA) */
     --cor-verde-clara-escura: #1da851;        /* Hover de botões */
@@ -18,8 +18,8 @@
     --cor-sombra-intensa: rgba(0, 0, 0, 0.2);
 
     /* Cores de elementos específicos */
-    --cor-botao-menu: rgba(59, 78, 59, 1);
-    --cor-botao-menu-hover: rgba(44, 95, 33, 0.73);
+    --cor-botao-menu: rgba(59, 78, 59, 1);     /*Cor botao menu */
+    --cor-botao-menu-hover: rgba(44, 95, 33, 0.73); /* cor botao do menu ao passar mouse */
 }
 
 /* ======= ESTILOS GERAIS ======= */
