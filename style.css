@@ -2,15 +2,16 @@
 :root {
     /* Cores base do tema */
     --cor-fundo-pagina: #f5f5f5;
-    --cor-texto-principal: #333;
+    --cor-texto-body: #333;
     --cor-branca: #ffffff;
 
     /* Cores da identidade visual */
-    --cor-verde-principal: #3b4e3b;           /* Sidebar, rodapé */
-    --cor-verde-principal-transparente: #3b4e3bf1; /* Menu lateral*/
-    --cor-verde-escura: #1f5a13;              /* Hovers e destaques */
-    --cor-verde-clara: #25d366;               /* Botões de ação (WhatsApp, CTA) */
-    --cor-verde-clara-escura: #1da851;        /* Hover de botões */
+    --cor-texto-sidebar: #333;
+    --cor-principal: #dfcaae;           /* Sidebar, rodapé */
+    --cor-principal-transparente: #dfcaaef1; /* Menu lateral*/
+    --cor-hover-destaque: #9e825e;              /* Hovers e destaques */
+    --cor-wpp-clara: #25d366;               /* Botões de ação (WhatsApp, CTA) */
+    --cor-wpp-hover-escura: #1da851;        /* Hover de botões */
 
     /* Cores complementares */
     --cor-texto-claro: #cce3cc;               /* Texto de links no rodapé */
@@ -18,8 +19,8 @@
     --cor-sombra-intensa: rgba(0, 0, 0, 0.2);
 
     /* Cores de elementos específicos */
-    --cor-botao-menu: rgba(59, 78, 59, 1);     /*Cor botao menu */
-    --cor-botao-menu-hover: rgba(44, 95, 33, 0.73); /* cor botao do menu ao passar mouse */
+    --cor-botao-menu: #dbc3a4a2;     /*Cor botao menu */
+    --cor-botao-menu-hover: #9e825e; /* cor botao do menu ao passar mouse */
 }
 
 /* ======= ESTILOS GERAIS ======= */
@@ -32,14 +33,14 @@
 
 body {
     background: var(--cor-fundo-pagina);
-    color: var(--cor-texto-principal);
+    color: var(--cor-texto-body);
     display: flex;
 }
 
 /* ======= SIDEBAR ======= */
 .sidebar {
     width: 250px;
-    background: var(--cor-verde-principal-transparente);
+    background: var(--cor-principal-transparente);
     color: var(--cor-branca);
     padding: 20px;
     height: 100vh;
@@ -57,7 +58,7 @@ body {
 }
 
 .sidebar a {
-    color: var(--cor-branca);
+    color: var(--cor-texto-sidebar);
     text-decoration: none;
     padding: 10px 0;
     display: block;
@@ -65,7 +66,7 @@ body {
 }
 
 .sidebar a:hover {
-    background: var(--cor-verde-escura);
+    background: var(--cor-hover-destaque);
     padding-left: 5px;
 }
 
@@ -76,7 +77,7 @@ body {
     top: 15px;
     left: 15px;
     background: var(--cor-botao-menu);
-    color: var(--cor-branca);
+    color: var(--cor-texto-sidebar);
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -113,7 +114,7 @@ body {
 
 .header h1 {
     font-size: 2.5em;
-    color: var(--cor-verde-escura);
+    color: var(--cor-hover-destaque);
 }
 
 /* ======= CONTEÚDO ======= */
@@ -136,7 +137,7 @@ body {
 }
 
 .text h2 {
-    color: var(--cor-verde-escura);
+    color: var(--cor-hover-destaque);
     margin-bottom: 10px;
 }
 
@@ -155,7 +156,7 @@ body {
 }
 
 .cta a {
-    background: var(--cor-verde-clara);
+    background: var(--cor-wpp-clara);
     color: var(--cor-branca);
     padding: 10px 20px;
     text-decoration: none;
@@ -165,7 +166,7 @@ body {
 }
 
 .cta a:hover {
-    background: var(--cor-verde-clara-escura);
+    background: var(--cor-wpp-hover-escura);
 }
 
 /* ======= WHATSAPP FLOATING BUTTON ======= */
@@ -173,7 +174,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: var(--cor-verde-clara);
+    background-color: var(--cor-wpp-clara);
     color: var(--cor-branca);
     width: 60px;
     height: 60px;
@@ -188,7 +189,7 @@ body {
 }
 
 .whatsapp-button:hover {
-    background-color: var(--cor-verde-clara-escura);
+    background-color: var(--cor-wpp-hover-escura);
 }
 
 /* ======= LOGO ======= */
@@ -200,12 +201,12 @@ body {
 
 /* ======= RODAPÉ ======= */
 .footer {
-    background-color: var(--cor-verde-principal);
-    color: var(--cor-branca);
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-sidebar);
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    border-top: 3px solid var(--cor-verde-escura);
+    border-top: 3px solid var(--cor-hover-destaque);
 }
 
 .footer p {
@@ -214,7 +215,7 @@ body {
 }
 
 .footer .social-links a {
-    color: var(--cor-texto-claro);
+    color: var(--cor-texto-sidebar);
     text-decoration: none;
     margin: 0 5px;
     font-size: 0.95em;
@@ -222,7 +223,7 @@ body {
 }
 
 .footer .social-links a:hover {
-    color: var(--cor-verde-clara);
+    color: var(--cor-hover-destaque);
 }
 
 /* ======= RESPONSIVIDADE ======= */
