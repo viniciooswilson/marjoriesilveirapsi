@@ -1,0 +1,19 @@
+# Dados temporários e arquivos gerados
+imagens/imgpsicologamarjorie/optimized/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Ambiente local
+.venv/
+venv/
+__pycache__/
+
+# Arquivos de backup
+*.bak
+*.swp
+*~
+
+# Dependências
+node_modules/
